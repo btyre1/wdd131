@@ -1,0 +1,60 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.content {
+    max-width: 600px;
+    margin: 40px auto;   
+    padding: 40px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.title h2 {
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: #006EB6;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+main p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.does-list {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.does-list li {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .logo {
+    width: 150px;   
+    height: auto;
+}
