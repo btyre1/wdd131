@@ -2,8 +2,6 @@ body {
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
     line-height: 1.5;
-    margin: 0;
-    padding: 0;
     background-color: #fff;
     color: #000;
 }
@@ -22,16 +20,16 @@ body {
 
 .title h1 {
     letter-spacing: 2px;
-    font-size: 28px;
+    font-size: 34px;
     margin-bottom: 10px;
 }
 
 .title h2 {
     letter-spacing: 3px;
-    font-size: 16px;
+    font-size: 13.5px;
     color: #006EB6;
-    margin-top: 0;
     margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
 }
 
 main p {
@@ -47,6 +45,7 @@ main p {
 .does-list li {
     text-align: left;
     margin-bottom: 15px;
+    margin-left: 20px;
 }
 
 footer {
@@ -57,4 +56,5 @@ footer {
 footer .logo {
     width: 150px;   
     height: auto;
+    margin-top: 25px;
 }
