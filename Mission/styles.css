@@ -58,3 +58,15 @@ footer .logo {
     height: auto;
     margin-top: 25px;
 }
+
+.dark {
+    color: #ffffff;
+}
+
+.dark .content {
+    background-color: #333;
+}
+
+.dark .title h2 {
+    color: #A0D4ED;
+}
