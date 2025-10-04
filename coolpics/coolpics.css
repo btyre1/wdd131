@@ -1,7 +1,5 @@
-/* Import font */
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
-/* CSS Variables */
 :root {
   --primary-color: #52489c;
   --secondary-color: #59c3c3;
@@ -14,7 +12,7 @@
 
 body {
   font-family: var(--primary-font);
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin: 0;
   color: var(--text-dark);
   background: #eaeaea;
@@ -29,7 +27,7 @@ header, footer {
 
 h1 {
   font-family: var(--secondary-font);
-  font-size: 2.5em;
+  font-size: 3.5em;
   margin: 0.5rem 0;
 }
 
@@ -47,6 +45,7 @@ nav {
 
 nav a {
   display: block;
+  margin: 0 1.5rem;
   padding: 0.5rem;
   color: var(--text-light);
   text-decoration: underline; 
@@ -64,7 +63,6 @@ nav a {
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.3rem; 
   padding: 1rem;
   justify-items: center;
 }
@@ -74,7 +72,7 @@ nav a {
   height: 250px;
   object-fit: cover;
   border-radius: 5px;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+  box-shadow: 3px 3px 6px rgba(0,0,0,1);
 }
 
 footer {
@@ -111,6 +109,5 @@ footer {
 
   .gallery {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.4rem; 
   }
 }
