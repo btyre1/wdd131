@@ -38,7 +38,6 @@ h2 {
 }
 
 nav {
-  display: none; 
   flex-direction: column;
   margin-top: 0.75rem;
 }
@@ -51,7 +50,7 @@ nav a {
   text-decoration: underline; 
 }
 
-#menu-button {
+.menu-button {
   background: none;
   border: none;
   font-size: 1.2em;
@@ -103,7 +102,7 @@ footer {
     font-size: 1.1em;
   }
 
-  #menu-button {
+  .menu-button {
     display: none;
   }
 
