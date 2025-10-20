@@ -16,3 +16,4 @@ const convertToGPA(grade) {
     return points;
 }
 const gpas = letterGrades.map(convertToGPA);
+const gpa = gpas.reduce((total, num) => total + num, 0) / gpas.length;
