@@ -17,3 +17,9 @@ const convertToGPA(grade) {
 }
 const gpas = letterGrades.map(convertToGPA);
 const gpa = gpas.reduce((total, num) => total + num, 0) / gpas.length;
+
+const words = ["watermelon", "peach", "apple", "tomato", "grape"];
+const shortWords = words.filter(function (word) {
+  return word.length < 6;
+});
+
