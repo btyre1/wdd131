@@ -65,12 +65,13 @@ li a {
     display: grid;
     grid-template-columns: 3.8fr 1fr;
     max-width: 1050px;
+    margin: 0 auto;
 }
 
 .article-grid {
     display: grid;
     grid-template-columns: 150px 1fr;
-    gap: 8rem;
+    gap: 1.5rem;
     max-height: 470px;
 }
 
@@ -79,12 +80,14 @@ li a {
     line-height: 0.7;
     border-right: 1.75px solid #EFC69B;
     padding-right: 15px;
+    margin-top: 20px;
 }
 
 .details time {
     display: block;
     font-size: large;
     font-weight: 550;
+    margin-top: 15px;
 }
 
 img {
