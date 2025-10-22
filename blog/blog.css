@@ -15,7 +15,7 @@ h1 {
 
 h2 {
     color: #AF1B3F;
-    font-weight: 750
+    font-weight: bolder;
 }
 
 a {
@@ -76,6 +76,9 @@ li a {
 
 .details {
     text-align: right;
+    line-height: 0.7;
+    border-right: 1.75px solid #EFC69B;
+    padding-right: 15px;
 }
 
 .details time {
