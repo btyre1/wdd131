@@ -15,7 +15,7 @@ h1 {
 
 h2 {
     color: #AF1B3F;
-    font-weight: 750;
+    font-weight: 750
 }
 
 a {
@@ -75,11 +75,13 @@ li a {
 }
 
 .details {
-    text-align: left;
+    text-align: right;
 }
 
 .details time {
     display: block;
+    font-size: large;
+    font-weight: 550;
 }
 
 img {
