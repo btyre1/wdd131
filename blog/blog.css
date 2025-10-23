@@ -15,7 +15,8 @@ h1 {
 
 h2 {
     color: #AF1B3F;
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 a {
@@ -63,7 +64,7 @@ li a {
 
 .content-grid {
     display: grid;
-    grid-template-columns: 3.8fr 1fr;
+    grid-template-columns: 2.6fr 1fr;
     max-width: 1050px;
     margin: 0 auto;
 }
@@ -95,3 +96,10 @@ img {
     height: 25%;
     padding-left: 30px;
 }
+
+.summary img {
+    display: block;
+    margin: 0 auto;
+}
+
+
