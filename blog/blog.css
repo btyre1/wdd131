@@ -74,7 +74,7 @@ li a {
 
 .article-grid {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 200px 1fr;
     gap: 1.5rem;
     max-height: 450px;
 }
@@ -104,6 +104,11 @@ img {
 .summary img {
     display: block;
     margin: 0 auto;
+    padding-left: 0;
+}
+
+.summary p {
+    padding-right: 60px;
 }
 
 .filters {
