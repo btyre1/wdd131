@@ -22,6 +22,7 @@ h2 {
 a {
     color: #AF1B3F;
     text-decoration: none;
+    font-size: 18px;
 }
 
 header {
@@ -44,6 +45,8 @@ nav {
     margin: 0 auto;
     padding: 1rem 0;
     max-width: 800px;
+    column-gap: 0.8rem;
+    padding-left: 4rem;
 }
 
 li a {
@@ -73,7 +76,7 @@ li a {
     display: grid;
     grid-template-columns: 150px 1fr;
     gap: 1.5rem;
-    max-height: 470px;
+    max-height: 450px;
 }
 
 .details {
@@ -82,6 +85,7 @@ li a {
     border-right: 1.75px solid #EFC69B;
     padding-right: 15px;
     margin-top: 20px;
+    height: 36%;
 }
 
 .details time {
@@ -102,4 +106,8 @@ img {
     margin: 0 auto;
 }
 
-
+.filters {
+    border: 2px solid #EFC69B;
+    margin-bottom: 1.5rem;
+    margin-top: 1.4rem;
+}
