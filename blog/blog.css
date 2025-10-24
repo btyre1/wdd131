@@ -10,6 +10,7 @@ h1, h2 {
 
 h1 {
     padding-bottom: 1rem;
+    font-size: 40px;
 }
 
 h2 {
@@ -75,8 +76,15 @@ li a {
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: 1.5rem;
-    max-height: 450px;
+    align-items: stretch;
 }
+
+.article-grid img {
+    display: block;
+    max-width: 250px; 
+    height: auto;
+}
+
 
 .details {
     text-align: right;
@@ -84,7 +92,7 @@ li a {
     border-right: 1.75px solid #EFC69B;
     padding-right: 15px;
     margin-top: 20px;
-    height: 36%;
+    height: auto;
 }
 
 .details time {
@@ -102,7 +110,7 @@ img {
 
 .summary img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto;   
     padding-left: 0;
 }
 
@@ -114,4 +122,8 @@ img {
     border: 2px solid #EFC69B;
     margin-bottom: 1.5rem;
     margin-top: 1.4rem;
+}
+
+.articles article {
+    margin-bottom: 2rem; 
 }
