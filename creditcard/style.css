@@ -1,0 +1,102 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f5f5f5;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#amount {
+  font-size: 15px;
+}
+
+#form-container {
+  display: grid;
+  grid-template-areas: "front back" ". button";
+  gap: 20px;
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#card-front, #card-back {
+  background-color: #d3d3d3;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  width: 390px;
+  height: 250px;
+}
+
+#card-front {
+  grid-area: front;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#card-back {
+  grid-area: back;
+  background-color: #c0c0c0;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  z-index: 1;
+}
+
+#card-stripe {
+  background-color: #3d3d3d;
+  height: 55px;
+  margin-top: 30px;
+}
+
+#card-btn {
+  grid-area: button;
+  background-color: white;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 280px;
+}
+
+#image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+#exp-container input {
+  width: 48%;
+}
+
+#cvc-container {
+  font-size: 10px;
+}
+
+#cvc-container p {
+  margin-top: 5px;
+  text-transform: none;
+}
+
+
