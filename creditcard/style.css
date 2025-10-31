@@ -46,9 +46,8 @@ main {
 
 #card-front, #card-back {
   background-color: #d3d3d3;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 20px;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
   width: 270px;
   height: 150px;
 }
@@ -59,21 +58,23 @@ main {
   top: 0;
   left: 0;
   z-index: 2;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
 }
 
 #card-back {
   grid-area: back;
-  background-color: #c0c0c0;
   position: absolute;
-  top: 40px;
-  left: 20px;
+  top: 38px;
+  right: 110px;
   z-index: 1;
 }
 
 #card-stripe {
   background-color: #3d3d3d;
-  height: 55px;
-  margin-top: 30px;
+  height: 35px;
+  margin-left: auto;
+  width: 107%;
+  margin-top: -6px;
 }
 
 #card-btn {
@@ -105,12 +106,16 @@ input {
 }
 
 #cvc-container {
-  font-size: 10px;
+  position: absolute;
+  bottom: 17px;   
+  right: 17px;   
+  text-align: left;
+  display: flex;
+  flex-direction: column; 
 }
 
-#cvc-container p {
-  margin-top: 5px;
-  text-transform: none;
+#cvc-container input {
+  width: 40px;       
 }
 
 #card-number {
