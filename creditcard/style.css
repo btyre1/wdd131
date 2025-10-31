@@ -79,12 +79,18 @@ main {
 
 #card-btn {
   grid-area: button;
-  background-color: white;
-  border: 1px solid #000;
-  padding: 10px 20px;
+  background-color: #e8e5e5;
+  border: 2px solid #000;
+  padding: 10px 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 280px;
+  margin-top: 220px;
+  width: 70px;
+  margin-left: 180px;
+  font-size: 12px;
+  font-weight: 550;
 }
 
 #image-container {
