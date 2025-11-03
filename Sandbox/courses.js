@@ -17,21 +17,16 @@ const aCourse = {
       instructor: "Sis A",
     },
   ],
-  enrollStudent: function (sectionNum) {
+  changeEnrollment: function (sectionNum, add = true) {
     const sectionIndex = this.sections.findIndex(
       (section) => section.sectionNum == sectionNum
     );
     if (sectionIndex >= 0) {
-      this.sections[sectionIndex].enrolled++;
-      renderSections(this.sections);
-    }
-  },
-  dropStudent: function (sectionNum) {
-    const sectionIndex = this.sections.findIndex(
-      (section) => section.sectionNum == sectionNum
-    );
-    if (sectionIndex >= 0) {
-      this.sections[sectionIndex].enrolled--;
+      if (add) {
+        this.sections[sectionIndex].enrolled++;
+      } else {
+        this.sections[sectionIndex].enrolled--;
+      }
       renderSections(this.sections);
     }
   },
