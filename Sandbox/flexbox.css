@@ -22,3 +22,26 @@ img {
   flex: 0 1 5em;
   text-align: center;
 }
+
+.media-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.media-card__content > h3 {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 550px) {
+  .media-card {
+    flex-direction: row;
+  }
+  .media-card__image {
+    flex: 0 1 250px;
+  }
+  .media-card__content {
+    flex: 0 1 60ch;
+  }
+}
