@@ -45,3 +45,14 @@ img {
     flex: 0 1 60ch;
   }
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.gallery > * {
+  flex: 1 1 460px;
+}
