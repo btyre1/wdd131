@@ -12,3 +12,13 @@ body {
 img {
   max-width: 100%;
 }
+
+.main-nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.main-nav > li {
+  flex: 0 1 5em;
+  text-align: center;
+}
