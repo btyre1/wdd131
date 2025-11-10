@@ -144,7 +144,8 @@ footer .social {
     display: flex;             
     justify-content: center;   
     gap: 0.3rem;
-    margin-bottom: 0.3rem;               
+    margin-bottom: 0.3rem;  
+    margin-top: 1.5rem;             
 }
 
 footer .social img {
@@ -155,6 +156,10 @@ footer .social img {
 footer a {
     color: var(--primary-color);
     text-decoration: none;
+}
+
+footer .attribution-link {
+    font-size: 0.6em;
 }
 
 @media (max-width: 600px) {
