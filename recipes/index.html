@@ -22,12 +22,37 @@
     <body>
         <header>
             <div class="logo">
-                <img src="images/recipe-book.png" alt="Recipe book logo" />
+                <img src="images/recipe-book.png" alt="Recipe book logo"/>
                 <h1>RecipeBook</h1>
             </div>
         </header>
 
         <main>
+
+            <section class="search">
+                <form>
+                    <input type="text" id="search" name="search" placeholder="Find a recipe"/>
+                    <button type="submit" aria-label="Search">
+                        <img src="images/search.svg" alt=""/>
+                    </button>
+                </form>
+            </section>
+
+            <section class="recipe">
+                <span class="tag">dessert</span>
+                <h2>Sweet Potato Waffles</h2>
+
+                <img src="./images/sweet-potato-waffle-md.jpg" alt="Sweet Potato Waffles" width="400"/>
+                <p class="description">Savory waffles made with sweet potato and a hint of ginger.</p>
+
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+	                <span aria-hidden="true" class="icon-star">⭐</span>
+	                <span aria-hidden="true" class="icon-star">⭐</span>
+	                <span aria-hidden="true" class="icon-star">⭐</span>
+	                <span aria-hidden="true" class="icon-star">⭐</span>
+	                <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+            </section>
 
         </main>
 
