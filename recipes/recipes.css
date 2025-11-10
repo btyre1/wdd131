@@ -1,6 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+:root {
+    --primary-color: #1b98e0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Patrick Hand", cursive;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 footer .social img {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    display: flex;
+    font-family: var(--secondary-font);               
+    align-items: center;         
+    justify-content: center;                     
+}
+
+.logo h1 {
+    font-size: 3.5em;
+    font-weight: 100;
+}
+
+.logo img {
+    width: 80px;                 
+    height: auto;
+    margin-bottom: 37px;
+}
+
+.search form {
+    display: flex;
+    align-items: stretch;  
+    border: 1.5px solid var(--text-dark);
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    margin-left: 35px;
+}
+
+.search input {
+    flex: 1;
+    padding-left: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    font-size: 20px;
+}
+
+.search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    border-left: 3px solid var(--text-dark);
+}
+
+.search button img {
+    width: 2.2em;
+    height: auto;
 }
 
 
