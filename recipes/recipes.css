@@ -47,6 +47,12 @@ footer .social img {
     margin-bottom: 37px;
 }
 
+.search {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
 .search form {
     display: flex;
     align-items: stretch;  
@@ -55,7 +61,7 @@ footer .social img {
     overflow: hidden;
     width: 100%;
     max-width: 350px;
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 .search input {
