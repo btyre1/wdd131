@@ -110,7 +110,7 @@ footer .social img {
     border: 1.5px solid var(--text-dark);
     margin-top: 5px;
     padding: 5px;
-    margin-right: 280px;
+    margin-right: 277px;
     font-weight: bold;
 }
 
@@ -132,6 +132,29 @@ footer .social img {
 .recipe .description {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+}
+
+footer {
+    width: 100%;         
+    padding: 1rem 0;         
+    text-align: center;     
+}
+
+footer .social {
+    display: flex;             
+    justify-content: center;   
+    gap: 0.3rem;
+    margin-bottom: 0.3rem;               
+}
+
+footer .social img {
+    width: 3em;
+    height: 3em;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {
