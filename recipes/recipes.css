@@ -53,7 +53,7 @@ footer .social img {
 }
 
 .search {
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #c3c2c2;
     padding-bottom: 1.1rem;
     margin-bottom: 1.5rem;
     width: 100%;
@@ -107,6 +107,7 @@ footer .social img {
     margin: 0rem auto;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    align-items: flex-start;
 }
 
 .recipe img {
@@ -120,6 +121,7 @@ footer .social img {
     padding: 5px;
     margin-right: 277px;
     font-weight: bold;
+    width: fit-content;
 }
 
 .recipe h2 {
@@ -177,17 +179,32 @@ footer .attribution-link {
 }
 
 @media (min-width: 600px) {
-    .recipe {
+    .recipe{
         display: flex;
         flex-direction: row;      
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        width: 100%;
+        padding-left: 1.5rem;  
+        padding-right: 1.5rem;  
+        box-sizing: border-box;
+    }
+
+    footer .social {
+        justify-content: flex-end;
     }
 }
 
 @media (min-width: 960px) {
-    main {
+    main, footer {
         max-width: 960px;       
     }
-
     
 }
 
