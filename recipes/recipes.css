@@ -13,10 +13,14 @@ body {
     font-family: var(--primary-font);
     color: var(--text-dark);
     background-color: white;
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 0;
+    align-items: stretch;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
 }
 
 img {
@@ -59,11 +63,12 @@ footer .social img {
 
 .search form {
     display: flex;
-    max-width: 350px;
     align-items: stretch;  
     border: 1.5px solid var(--text-dark);
     border-radius: 6px;
     overflow: hidden;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     width: 100%;
 }
 
@@ -99,8 +104,9 @@ footer .social img {
     border-radius: 5px;
     border: 1.5px solid var(--text-dark);
     background-color: #fff;
-    max-width: 350px;
     margin: 0rem auto;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .recipe img {
@@ -171,18 +177,17 @@ footer .attribution-link {
 }
 
 @media (min-width: 600px) {
-    main {
+    .recipe {
         display: flex;
-        flex-direction: row;  
-        flex-wrap: wrap;     
-        justify-content: center;
+        flex-direction: row;      
     }
 }
 
 @media (min-width: 960px) {
     main {
-        max-width: 960px;     
-        margin: 0 auto;       
+        max-width: 960px;       
     }
+
+    
 }
 
