@@ -181,7 +181,29 @@ footer .attribution-link {
 @media (min-width: 600px) {
     .recipe{
         display: flex;
-        flex-direction: row;      
+        flex-direction: row;    
+        overflow: hidden;
+    }
+
+    .recipe .tag {
+        margin-top: 0;
+    }
+
+    .recipe-info {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 1.2rem;
+    }
+
+    .recipe-info h2 {
+        margin-top: 1rem;
+        font-size: 30px;
+    }
+
+    .recipe-info p {
+        font-size: 20px;
     }
 
     footer {
@@ -205,6 +227,5 @@ footer .attribution-link {
     main, footer {
         max-width: 960px;       
     }
-    
 }
 
