@@ -110,6 +110,10 @@ footer .social img {
     align-items: flex-start;
 }
 
+.recipe-info {
+    margin-top: 0.6rem;
+}
+
 .recipe img {
     max-width: 100%;
     height: auto;
@@ -117,7 +121,6 @@ footer .social img {
 
 .tag {
     border: 1.5px solid var(--text-dark);
-    margin-top: 5px;
     padding: 5px;
     margin-right: 277px;
     font-weight: bold;
@@ -195,6 +198,7 @@ footer .attribution-link {
         flex-direction: column;
         justify-content: flex-start;
         padding-left: 1.2rem;
+        margin-top: 0;
     }
 
     .recipe-info h2 {
