@@ -80,3 +80,12 @@ function compareFn(a,b) {
 }
 
 const anotherSort = simpleList.sort(compareFn)
+
+function searchList(list, query) {
+    function searchCallback(string) {
+      return string.toLowerCase().includes(query.toLowerCase());
+    }
+    return list.filter(searchCallback);
+}
+console.log(searchList(simpleList, "b"));
+console.log(searchList(simpleList, "an"));
