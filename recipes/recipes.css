@@ -152,7 +152,7 @@ footer .social img {
     letter-spacing: 0;
 }
 
-.recipe .description {
+.recipe__description {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
 }
@@ -186,7 +186,7 @@ footer .attribution-link {
 }
 
 @media (max-width: 600px) {
-    .recipe .description {
+    .recipe__description {
         display: none;
     }
 }
