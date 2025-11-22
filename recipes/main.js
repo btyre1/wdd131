@@ -40,4 +40,6 @@ function recipeTemplate(recipe) {
     `;
 }
 
+const recipe = getRandomListEntry(recipes);
+console.log(recipeTemplate(recipe));
 
