@@ -8,3 +8,5 @@ function getRandomListEntry(list) {
     return list[random(list.length)];
 }
 
+console.log(getRandomListEntry(recipes));
+
