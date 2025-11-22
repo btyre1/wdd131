@@ -17,29 +17,71 @@ function tagsTemplate(tags) {
 }
 
 function ratingTemplate(rating) {
-    let stars = "";
+    let html = `<span class="rating" role="img" aria-label="Rating: ${rating} out of 5 stars">`;
     for (let i = 1; i <= 5; i++) {
-        stars += i <= rating ? "⭐" : "☆";
+        html += i <= rating ? "⭐" : "☆";
     }
-    return stars;
+    html += `</span>`;
+    return html;
 }
 
 function recipeTemplate(recipe) {
     return `
-    <figure>
-        <img src="${recipe.image}" alt="${recipe.name}">
-        <ul class="tags">
-            ${tagsTemplate(recipe.tags)}
-        </ul>
-        <p class="rating">${ratingTemplate(recipe.rating)}</p>
-        <figcaption>
+    <div class="recipe">
+        <img src="${recipe.image}" alt="image of ${recipe.name}">
+        <div class="recipe-info">
+            <ul class="recipe__tags">
+                ${tagsTemplate(recipe.tags)}
+            </ul>
             <h2>${recipe.name}</h2>
-        </figcaption>
-        <p class="description">${recipe.description}</p>
-    </figure>
+            <p class="recipe__ratings">${ratingTemplate(recipe.rating)}</p>
+            <p class="recipe__description">${recipe.description}</p>
+        </div>
+    </div>
     `;
 }
 
-const recipe = getRandomListEntry(recipes);
-console.log(recipeTemplate(recipe));
+function filterRecipes(query) {
+    query = query.toLowerCase();
 
+    const results = recipes.filter(recipe => {
+        if (recipe.name.toLowerCase().includes(query)) 
+            return true;
+        if (recipe.description.toLowerCase().includes(query)) 
+            return true;
+
+        if (recipe.tags.find(t => t.toLowerCase().includes(query))) 
+            return true;
+
+        if (recipe.recipeIngredient.find(i => i.toLowerCase().includes(query))) 
+            return true;
+
+        return false;
+    });
+
+    return results.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function searchHandler(e) {
+    e.preventDefault();
+
+    const query = document.querySelector("#searchInput").value.trim();
+    if (!query) return;
+
+    const results = filterRecipes(query);
+    renderRecipes(results);
+}
+
+function renderRecipes(recipeList) {
+    const output = document.querySelector("#recipes");
+    output.innerHTML = recipeList.map(recipeTemplate).join("");
+}
+
+function init() {
+    const recipe = getRandomListEntry(recipes);
+    renderRecipes([recipe]);
+}
+
+init();
+
+document.querySelector("#searchBtn").addEventListener("click", searchHandler);

@@ -31,25 +31,14 @@
 
             <section class="search">
                 <form>
-                    <input type="text" id="search" name="search" placeholder="Find a recipe"/>
-                    <button type="submit" aria-label="Search">
+                    <input type="text" id="searchInput" name="search" placeholder="Find a recipe"/>
+                    <button type="submit" id="searchBtn" aria-label="Search">
                         <img src="images/search.svg" alt=""/>
                     </button>
                 </form>
             </section>
 
-            <section class="recipe">
-                <img src="./images/sweet-potato-waffle-md.jpg" alt="Sweet Potato Waffles"  width="400"/>
-
-                <div class="recipe-info">
-                    <span class="tag">dessert</span>
-                    <h2>Sweet Potato Waffles</h2>
-                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-	                    <span aria-hidden="true" class="icon-star">⭐</span><span aria-hidden="true" class="icon-star">⭐</span><span aria-hidden="true" class="icon-star">⭐</span><span aria-hidden="true" class="icon-star">⭐</span><span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                    <p class="description">Savory waffles made with sweet potato and a hint of ginger.</p>
-                </div>
-            </section>
+            <section id="recipes"></section>
 
         </main>
 
