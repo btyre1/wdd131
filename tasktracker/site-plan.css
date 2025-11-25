@@ -7,23 +7,20 @@
   --heading-font: "Georgia", serif;
   --paragraph-font: "Brush Script MT", cursive;
 
-  /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var(
     --primary-color
-  ); /* headlines on a white background */
-  --headline-color-on-color: white; /* headlines on a colored background */
+  ); 
+  --headline-color-on-color: white; 
   --paragraph-color-on-white: var(
     --primary-color
-  ); /* paragraph text on a white background */
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  ); 
+  --paragraph-color-on-color: white; 
   --paragraph-background-color: var(--primary-color);
-  --nav-link-color: var(--primary-color);
-  --nav-background-color: var(--secondary-color);
+  --nav-link-color: var(--secondary-color);
+  --nav-background-color: var(--primary-color);
   --nav-hover-link-color: white;
   --nav-hover-background-color: var(--primary-color);
 }
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
   max-width: 1200px;
