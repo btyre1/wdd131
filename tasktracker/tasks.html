@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Tracker | Tasks</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-area">
+        <img src="images/logo.png" alt="Task Tracker Logo" class="logo" />
+        <span class="site-title">Task Tracker</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="tasks.html">Tasks</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="task-input-row">
+          <input type="text" id="taskInput" placeholder="Type a task..." />
+          <button id="addTaskBtn">Add Task</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>TASK LIST</h2>
+        <div id="taskList"></div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Task Tracker. All rights reserved.
+    </footer>
+  </body>
+</html>
