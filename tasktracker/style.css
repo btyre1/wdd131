@@ -1,8 +1,5 @@
 /* wdd131/tasktracker/style.css */
 
-/* -------------------------------------------------
-   Global Reset + Font
-------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +15,6 @@ body {
   min-height: 100vh;
 }
 
-/* -------------------------------------------------
-   Color Variables (your palette)
-------------------------------------------------- */
 :root {
   --primary: #000000;
   --secondary: #FFFFFF;
@@ -31,9 +25,6 @@ body {
   --card-border: #d9d9d9;
 }
 
-/* -------------------------------------------------
-   Header
-------------------------------------------------- */
 header {
   width: 100%;
   padding: 1.3rem 2.4rem;
@@ -51,7 +42,7 @@ header {
 }
 
 .logo {
-  width: 70px;         /* BIGGER logo */
+  width: 70px;         
   height: auto;
   padding: 6px;
   background: var(--secondary);
@@ -66,7 +57,6 @@ header {
   color: var(--primary);
 }
 
-/* Navigation */
 nav a {
   margin-left: 1rem;
   padding: 0.5rem 1.2rem;
@@ -85,9 +75,6 @@ nav a:hover {
   border-color: var(--accent1);
 }
 
-/* -------------------------------------------------
-   Main Layout
-------------------------------------------------- */
 main {
   width: 100%;
   max-width: 900px;
@@ -95,7 +82,6 @@ main {
   flex: 1;
 }
 
-/* Card */
 .card {
   background: var(--card-bg);
   border: 2px solid var(--card-border);
@@ -112,9 +98,6 @@ main {
   color: var(--primary);
 }
 
-/* -------------------------------------------------
-   Example Task Items
-------------------------------------------------- */
 .example-task,
 .task-item {
   display: grid;
@@ -139,7 +122,6 @@ main {
   color: #555;
 }
 
-/* Item Buttons */
 .complete-btn,
 .delete-btn {
   padding: 0.35rem 0.75rem;
@@ -168,9 +150,6 @@ main {
   color: var(--secondary);
 }
 
-/* -------------------------------------------------
-   View All Tasks Button
-------------------------------------------------- */
 .view-btn {
   display: block;
   width: fit-content;
@@ -190,9 +169,6 @@ main {
   border-color: var(--accent1);
 }
 
-/* -------------------------------------------------
-   Task Input Row
-------------------------------------------------- */
 .task-input-row {
   display: flex;
   gap: 1rem;
@@ -223,9 +199,6 @@ main {
   border-color: var(--accent1);
 }
 
-/* -------------------------------------------------
-   Filters
-------------------------------------------------- */
 .filters {
   display: flex;
   justify-content: center;
@@ -249,9 +222,6 @@ main {
   color: var(--secondary);
 }
 
-/* -------------------------------------------------
-   Footer
-------------------------------------------------- */
 footer {
   text-align: center;
   padding: 1.2rem;
@@ -262,9 +232,6 @@ footer {
   font-size: 0.95rem;
 }
 
-/* -------------------------------------------------
-   Responsive
-------------------------------------------------- */
 @media (max-width: 600px) {
   nav a {
     padding: 0.4rem 0.8rem;
