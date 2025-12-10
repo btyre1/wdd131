@@ -37,8 +37,11 @@ function renderTasks(filter = "all") {
         if (task.completed) row.classList.add("completed");
 
         row.innerHTML = `
-            <input type="checkbox" ${task.completed ? "checked" : ""} />
-            <span class="${task.completed ? "done" : ""}">${task.text}</span>
+            <label>
+                <input type="checkbox" ${task.completed ? "checked" : ""} />
+                <span class="${task.completed ? "done" : ""}">${task.text}</span>
+            </label>
+            
             <button class="complete-btn">Complete</button>
             <button class="delete-btn">🗑</button>
         `;
