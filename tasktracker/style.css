@@ -98,6 +98,10 @@ main {
   color: var(--primary);
 }
 
+.card h2 {
+  letter-spacing: 0.5px;
+}
+
 .example-task,
 .task-item {
   display: grid;
